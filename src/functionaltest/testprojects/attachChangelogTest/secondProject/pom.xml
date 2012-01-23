@@ -54,7 +54,7 @@
 		<finalName>singleChangelogTest</finalName>
 		<plugins>
 			<plugin>
-				<groupId>org.neo4j</groupId>
+				<groupId>org.neo4j.build.plugins</groupId>
 				<artifactId>maven-changes-plugin</artifactId>
 				<version>0.1-SNAPSHOT</version>
 				<executions>

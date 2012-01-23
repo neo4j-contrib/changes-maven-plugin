@@ -7,8 +7,8 @@
 		<version>5</version>
 	</parent>
 
-	<groupId>org.neo4j</groupId>
-	<artifactId>maven-changes-plugin</artifactId>
+	<groupId>org.neo4j.build.plugins</groupId>
+	<artifactId>changes-maven-plugin</artifactId>
 	<name>Maven Changes Plugin</name>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>

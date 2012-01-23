@@ -54,8 +54,8 @@
     <finalName>combineProject</finalName>
     <plugins>
       <plugin>
-        <groupId>org.neo4j</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
+        <groupId>org.neo4j.build.plugins</groupId>
+        <artifactId>changes-maven-plugin</artifactId>
         <version>0.1-SNAPSHOT</version>
         <executions>
           <execution>
