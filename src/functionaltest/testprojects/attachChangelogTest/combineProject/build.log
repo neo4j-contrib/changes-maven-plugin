@@ -1,0 +1,94 @@
++ Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - it.sandbox:combineProject:jar:1.0-SNAPSHOT
+[INFO]    task-segment: [clean, compile, test]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/target (included: [**], excluded: [])
+[INFO] [changes:extract-changelog {execution: default}]
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/main/resources
+[INFO] [changes:attach-changelog {execution: default}]
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [changes:extract-changelog {execution: default}]
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/main/resources
+[INFO] [changes:attach-changelog {execution: default}]
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Compiling 1 source file to /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/target/test-classes
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.neo4j.ChangelogAttachedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.015 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 second
+[INFO] Finished at: Mon Jan 23 17:28:13 CET 2012
+[INFO] Final Memory: 14M/214M
+[INFO] ------------------------------------------------------------------------
++ Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - it.sandbox:combineProject:jar:1.0-SNAPSHOT
+[INFO]    task-segment: [compile, test]
+[INFO] ------------------------------------------------------------------------
+[INFO] [changes:extract-changelog {execution: default}]
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/main/resources
+[INFO] [changes:attach-changelog {execution: default}]
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [changes:extract-changelog {execution: default}]
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/main/resources
+[INFO] [changes:attach-changelog {execution: default}]
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.neo4j.ChangelogAttachedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.02 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 second
+[INFO] Finished at: Mon Jan 23 17:28:14 CET 2012
+[INFO] Final Memory: 9M/149M
+[INFO] ------------------------------------------------------------------------
+Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/validate.groovy
+Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/combineProject/validate.groovy
