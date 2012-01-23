@@ -1,0 +1,24 @@
+1.0 (2012-01-19)
+----------------
+o Fixes issues #173, #118, #138, #103
+
+1.0.M02 (2011-11-24)
+--------------------
+o Cypher console in webadmin is now a Neo4j Shell console with the exact same Cypher support included.
+o More documentation and examples.
+
+1.0.M01 (2011-10-18)
+----------------
+o Added useful server logging to data/graph.db/messages.log at startup.
+o Visualization adds nodes/relationships to the view for each search and search is performed with CTRL+ENTER.
+
+0.1-1.2.M05 (2010-12-02)
+------------------------
+
+o Updated to Jersey 1.4,
+o Fixed bug with duplicate Content-Length header (ticket 283)
+
+0.1 (2010-11-18)
+------------------------
+
+Initial release.

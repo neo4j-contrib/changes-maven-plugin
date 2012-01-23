@@ -1,0 +1,5 @@
+0.1
+------------------------
+ o Require.js support
+ o Coffescript compiler support
+ o Haml compiler support
