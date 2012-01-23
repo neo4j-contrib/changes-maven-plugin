@@ -1,11 +1,16 @@
 # Maven Changes Plugin
 
-## Deploy change logs
+## Extract change log section
 
 Reads human-written CHANGES.txt, and pulls out change log entries for the
-current project version, and deploys a change log for those with the project.
+current project version.
 
-## Combining change logs
+Example: https://github.com/neo4j/maven-changes-plugin/tree/master/src/functionaltest/testprojects/singleChangelogTest
 
-Pulls in deployed change logs from other Maven projects, and combines them
-into a master change log.
+## Deplying & combining change logs
+
+Deploys the relevant changelog entries for the current project version.
+Optionally, pulls in deployed changelogs from other projects, and adds
+them to this projects changelog.
+
+Example: https://github.com/neo4j/maven-changes-plugin/tree/master/src/functionaltest/testprojects/attachChangelogTest
