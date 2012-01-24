@@ -49,7 +49,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.neo4j.build.plugins</groupId>
-				<artifactId>maven-changes-plugin</artifactId>
+				<artifactId>changes-maven-plugin</artifactId>
 				<version>@project.version@</version>
 				<executions>
 					<execution>

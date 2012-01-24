@@ -1,5 +1,6 @@
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.sonatype.oss</groupId>
@@ -10,21 +11,21 @@
   <groupId>org.neo4j.build.plugins</groupId>
   <artifactId>changes-maven-plugin</artifactId>
   <name>Maven Changes Plugin</name>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
-  <url>http://github.com/neo4j/maven-changes-plugin</url>
+  <url>http://github.com/neo4j/changes-maven-plugin</url>
   <inceptionYear>2012</inceptionYear>
 
-  <description />
+  <description></description>
 
   <properties>
     <maven.version>2.0.9</maven.version>
     <maven.compiler.source>1.5</maven.compiler.source>
     <maven.compiler.target>1.5</maven.compiler.target>
 
-    <git.repo>git@github.com:neo4j/maven-changes-plugin.git</git.repo>
-    <git.url>github.com/neo4j/maven-changes-plugin</git.url>
+    <git.repo>git@github.com:neo4j/changes-maven-plugin.git</git.repo>
+    <git.url>github.com/neo4j/changes-maven-plugin</git.url>
     <git.url.http>http://${git.url}</git.url.http>
     <git.url.git>git://${git.url}</git.url.git>
 
