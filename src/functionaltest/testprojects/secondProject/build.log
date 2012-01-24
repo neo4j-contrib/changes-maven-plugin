@@ -5,34 +5,34 @@
 [INFO]    task-segment: [clean, compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [clean:clean {execution: default-clean}]
-[INFO] Deleting file set: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target (included: [**], excluded: [])
+[INFO] Deleting file set: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target (included: [**], excluded: [])
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/main/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/main/resources
 [INFO] [changes:attach-changelog {execution: default}]
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/main/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/main/resources
 [INFO] [changes:attach-changelog {execution: default}]
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [resources:testResources {execution: default-testResources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/test/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/test/resources
 [INFO] [compiler:testCompile {execution: default-testCompile}]
-[INFO] Compiling 1 source file to /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/test-classes
+[INFO] Compiling 1 source file to /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/test-classes
 [INFO] [surefire:test {execution: default-test}]
-[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/surefire-reports
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.019 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.015 sec
 
 Results :
 
@@ -41,9 +41,9 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1 second
-[INFO] Finished at: Mon Jan 23 17:27:58 CET 2012
-[INFO] Final Memory: 14M/214M
+[INFO] Total time: 2 seconds
+[INFO] Finished at: Tue Jan 24 10:59:36 CET 2012
+[INFO] Final Memory: 14M/213M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
@@ -54,47 +54,47 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/main/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/main/resources
 [INFO] [changes:attach-changelog {execution: default}]
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/main/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/main/resources
 [INFO] [changes:attach-changelog {execution: default}]
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [resources:testResources {execution: default-testResources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/src/test/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/src/test/resources
 [INFO] [compiler:testCompile {execution: default-testCompile}]
 [INFO] Nothing to compile - all classes are up to date
 [INFO] [surefire:test {execution: default-test}]
-[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/surefire-reports
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.018 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.017 sec
 
 Results :
 
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
 
 [INFO] [jar:jar {execution: default-jar}]
-[INFO] Building jar: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/singleChangelogTest.jar
+[INFO] Building jar: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/singleChangelogTest.jar
 [INFO] [install:install {execution: default-install}]
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/singleChangelogTest.jar to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT.jar
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT-changelog.txt
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT-changelog.txt
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/singleChangelogTest.jar to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT.jar
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT-changelog.txt
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/secondProject/1.0-SNAPSHOT/secondProject-1.0-SNAPSHOT-changelog.txt
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Mon Jan 23 17:28:01 CET 2012
+[INFO] Finished at: Tue Jan 24 10:59:38 CET 2012
 [INFO] Final Memory: 14M/215M
 [INFO] ------------------------------------------------------------------------
-Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/validate.groovy
-Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/attachChangelogTest/secondProject/validate.groovy
+Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/validate.groovy
+Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/secondProject/validate.groovy

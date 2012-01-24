@@ -7,12 +7,6 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
 
-  <parent>
-      <groupId>it.sandbox</groupId>
-      <artifactId>attachChangelogTest</artifactId>
-      <version>1.0-SNAPSHOT</version>
-  </parent>
-
   <properties>
     <maven.compiler.source>1.5</maven.compiler.source>
     <maven.compiler.target>1.5</maven.compiler.target>
@@ -56,7 +50,7 @@
       <plugin>
         <groupId>org.neo4j.build.plugins</groupId>
         <artifactId>changes-maven-plugin</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>@project.version@</version>
         <executions>
           <execution>
             <goals>
