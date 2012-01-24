@@ -10,7 +10,7 @@
   <groupId>org.neo4j.build.plugins</groupId>
   <artifactId>changes-maven-plugin</artifactId>
   <name>Maven Changes Plugin</name>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <url>http://github.com/neo4j/changes-maven-plugin</url>
