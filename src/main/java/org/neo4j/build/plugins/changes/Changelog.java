@@ -42,18 +42,18 @@ public class Changelog {
 
     public List<String> extractSectionForVersion(String version)
     {
-        return extractSectionForVersion(new VersionMatcher(version));
+        return extractSectionForVersion(new VersionMatcher(version), LineEvaluator.ALL);
     }
 
-    public List<String> extractSectionForVersion(VersionMatcher versionMatcher)
+    public List<String> extractSectionForVersion(VersionMatcher versionMatcher, LineEvaluator lineEvaluator)
     {
-        ChangelogSectionExtractor extractor = new ChangelogSectionExtractor(logLines, versionMatcher);
+        ChangelogExtractor extractor = new ChangelogExtractor(logLines, versionMatcher, lineEvaluator);
         return extractor.runExtraction(true);
     }
 
-    public List<String> extractAllEntriesWithoutHeadlines()
+    public List<String> extractAllEntriesWithoutHeadlines(VersionMatcher versionMatcher, LineEvaluator lineEvaluator)
     {
-        ChangelogSectionExtractor extractor = new ChangelogSectionExtractor(logLines, VersionMatcher.ANY);
+        ChangelogExtractor extractor = new ChangelogExtractor(logLines, versionMatcher, lineEvaluator);
         return extractor.runExtraction(false);
     }
 }

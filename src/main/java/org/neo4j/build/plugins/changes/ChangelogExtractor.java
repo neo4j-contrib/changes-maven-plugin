@@ -3,18 +3,20 @@ package org.neo4j.build.plugins.changes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChangelogSectionExtractor {
+public class ChangelogExtractor {
     
     private enum ParseMode {SCANNING,EXTRACTING,DONE};
     
     private List<String> logLines;
     private VersionMatcher versionMatcher;
+    private LineEvaluator lineEvaluator;
 
-    public ChangelogSectionExtractor(List<String> logLines,
-            VersionMatcher versionMatcher)
+    public ChangelogExtractor(List<String> logLines,
+            VersionMatcher versionMatcher, LineEvaluator lineEvaluator)
     {
         this.logLines = logLines;
         this.versionMatcher = versionMatcher;
+        this.lineEvaluator = lineEvaluator;
     }
 
     public List<String> runExtraction(boolean includeHeadlines)
@@ -62,7 +64,9 @@ public class ChangelogSectionExtractor {
                 return processLine(prevLine, line, output, mode, includeHeadlines);
             } else if(prevLine.trim().length() > 0) {
                 if(includeHeadlines || !isSectionStart(prevLine)) {
-                    output.add(prevLine);
+                    if(lineEvaluator.include(prevLine)) {
+                        output.add(prevLine);
+                    }
                 }
             }
             break;

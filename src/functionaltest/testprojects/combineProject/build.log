@@ -11,8 +11,6 @@
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/main/resources
 [INFO] [changes:attach-changelog {execution: default}]
-[INFO] snapshot it.sandbox:firstProject:1.0-SNAPSHOT: checking for updates from neo4j-repo
-[INFO] snapshot it.sandbox:secondProject:1.0-SNAPSHOT: checking for updates from neo4j-repo
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [changes:extract-changelog {execution: default}]
@@ -34,18 +32,18 @@
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.016 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7 seconds
-[INFO] Finished at: Tue Jan 24 11:43:32 CET 2012
-[INFO] Final Memory: 14M/213M
+[INFO] Total time: 2 seconds
+[INFO] Finished at: Wed Jan 25 13:54:00 CET 2012
+[INFO] Final Memory: 14M/211M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
@@ -79,18 +77,18 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.015 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Tue Jan 24 11:43:33 CET 2012
-[INFO] Final Memory: 9M/149M
+[INFO] Finished at: Wed Jan 25 13:54:02 CET 2012
+[INFO] Final Memory: 10M/211M
 [INFO] ------------------------------------------------------------------------
 Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/validate.groovy
 Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/validate.groovy

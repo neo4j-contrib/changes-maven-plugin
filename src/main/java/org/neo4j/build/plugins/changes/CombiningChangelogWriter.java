@@ -23,12 +23,14 @@ public class CombiningChangelogWriter {
     private Object version;
     private Date date;
     private List<Pair<String,File>> changelogs = new ArrayList<Pair<String,File>>();
+    private LineEvaluator lineEvaluator;
 
     public CombiningChangelogWriter(Date date,
-            String version)
+            String version, LineEvaluator lineEvaluator)
     {
         this.version = version;
         this.date = date;
+        this.lineEvaluator = lineEvaluator;
     }
 
     public void addChangelog(String title, File changelog)
@@ -46,7 +48,7 @@ public class CombiningChangelogWriter {
             for (Pair<String, File> changelogMeta : changelogs)
             {
                 Changelog changelog = new Changelog(changelogMeta.second);
-                List<String> lines = changelog.extractAllEntriesWithoutHeadlines();
+                List<String> lines = changelog.extractAllEntriesWithoutHeadlines(VersionMatcher.ANY, lineEvaluator);
                 
                 out.write(changelogMeta.first + ":\n");
                 

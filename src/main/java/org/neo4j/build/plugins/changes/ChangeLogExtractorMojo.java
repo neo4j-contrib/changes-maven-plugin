@@ -61,12 +61,21 @@ public class ChangeLogExtractorMojo extends AbstractMojo {
      */
     private List<String> includeVersions;
     
+    /**
+     * List of strings. Any entry in a change log
+     * that contains any of the listed lines will be
+     * ignored. 
+     *
+     * @parameter
+     */
+    private List<String> excludeLinesContaining;
+    
     public void execute() throws MojoExecutionException, MojoFailureException {
         try {
 
             Changelog changelog = new Changelog(changelogPath);
             
-            List<String> extractedSections = changelog.extractSectionForVersion(createVersionMatcher());
+            List<String> extractedSections = changelog.extractSectionForVersion(createVersionMatcher(), createLineEvaluator());
             
             FileUtils.writeLines(extractedChangelogOutputFile, extractedSections);
            
@@ -80,6 +89,15 @@ public class ChangeLogExtractorMojo extends AbstractMojo {
     private VersionMatcher createVersionMatcher()
     {
         return new VersionMatcher(createVersionRegexes());
+    }
+    
+    private LineEvaluator createLineEvaluator()
+    {
+        LineEvaluator evaluator = new LineEvaluator();
+        if(excludeLinesContaining != null) {
+            evaluator.excludeLinesContaining(excludeLinesContaining.toArray(new String[excludeLinesContaining.size()]));
+        }
+        return evaluator;
     }
 
     private String [] createVersionRegexes()

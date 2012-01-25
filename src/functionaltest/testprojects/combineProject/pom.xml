@@ -68,6 +68,9 @@
               <artifactId>secondProject</artifactId>
             </changelogArtifact>
           </changelogArtifacts>
+          <excludeLinesContaining>
+            <entry>[minor]</entry>
+          </excludeLinesContaining>
         </configuration>
       </plugin>
     </plugins>

@@ -12,27 +12,28 @@ import org.junit.Test;
 
 public class ChangelogAttachedTest  {
 
-    private static final String OUTPUT_CHANGELOG = "CHANGES.txt";
     private static final String EXPECTED_CHANGELOG_CONTENT = 
-            "1.0 (2012-01-19)\n"+
-            "----------------\n"+
-            "o Fixes issues #173, #118, #138, #103\n\n";
+            "1.0-SNAPSHOT (2012-1-25)\n" +
+            "-------------------------\n" +
+            "\n" +
+            "it.sandbox.firstProject:\n" +
+            "o Fixes issues #173, #118, #138, #103\n" +
+            "o Made some changes [minor]\n" +
+            "\n" +
+            "\n";
     
-    private File output = new File("target/classes");
+    private File output = new File("target/CHANGES.txt");
 
     @Test
-    @Ignore
     public void outputFilesShouldExist() throws Exception 
     {
-        assertExists(new File(output, OUTPUT_CHANGELOG));
+        assertExists(output);
     }
     
     @Test
-    @Ignore
     public void outputFileShouldContainExpectedContent() throws Exception 
     {
-        File changelog = new File(output, OUTPUT_CHANGELOG);
-        assertContains(changelog, EXPECTED_CHANGELOG_CONTENT);
+        assertContains(output, EXPECTED_CHANGELOG_CONTENT);
     }
 
     private static void assertExists(File file) throws Exception 

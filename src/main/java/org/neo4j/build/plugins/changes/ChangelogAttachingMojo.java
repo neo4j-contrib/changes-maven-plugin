@@ -110,21 +110,21 @@ public class ChangelogAttachingMojo extends AbstractMojo {
      * @readonly
      */
     protected List<MavenProject> reactorProjects;
+    
+    /**
+     * List of strings. Any entry in a change log
+     * that contains any of the listed lines will be
+     * ignored. 
+     *
+     * @parameter
+     */
+    private List<String> excludeLinesContaining;
 
     public void execute() throws MojoExecutionException, MojoFailureException
     {
         try
         {
-
-            // Changelog changelog = new Changelog(changelogPath);
-            //
-            // String extractedSections =
-            // changelog.extractSectionForVersion(createVersionMatcher());
-            //
-            // FileUtils.writeStringToFile(outputPath, extractedSections);
-            //
-
-            // Create if output doesnt exist.
+            // Create if output doesn't exist.
             extractedChangelogOutputFile.getParentFile().mkdirs();
             extractedChangelogOutputFile.createNewFile();
             
@@ -132,7 +132,7 @@ public class ChangelogAttachingMojo extends AbstractMojo {
                 combinedOutputFile.delete();
             }
             
-            CombiningChangelogWriter combiner = new CombiningChangelogWriter(new Date(), mavenProject.getVersion());
+            CombiningChangelogWriter combiner = new CombiningChangelogWriter(new Date(), mavenProject.getVersion(), createLineEvaluator());
             
             combiner.addChangelog(mavenProject.getGroupId() + "." + mavenProject.getArtifactId(), extractedChangelogOutputFile);
             
@@ -159,6 +159,15 @@ public class ChangelogAttachingMojo extends AbstractMojo {
         {
             throw new MojoExecutionException(exc.getMessage(), exc);
         }
+    }
+
+    private LineEvaluator createLineEvaluator()
+    {
+        LineEvaluator evaluator = new LineEvaluator();
+        if(excludeLinesContaining != null) {
+            evaluator.excludeLinesContaining(excludeLinesContaining.toArray(new String[excludeLinesContaining.size()]));
+        }
+        return evaluator;
     }
 
     /**

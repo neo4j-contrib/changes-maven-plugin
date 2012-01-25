@@ -32,17 +32,17 @@
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.019 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1 second
-[INFO] Finished at: Tue Jan 24 11:43:22 CET 2012
+[INFO] Total time: 2 seconds
+[INFO] Finished at: Wed Jan 25 13:53:55 CET 2012
 [INFO] Final Memory: 14M/214M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
@@ -77,11 +77,11 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.016 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] [jar:jar {execution: default-jar}]
 [INFO] Building jar: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/singleChangelogTest.jar
@@ -92,8 +92,8 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 2
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1 second
-[INFO] Finished at: Tue Jan 24 11:43:24 CET 2012
+[INFO] Total time: 2 seconds
+[INFO] Finished at: Wed Jan 25 13:53:57 CET 2012
 [INFO] Final Memory: 14M/215M
 [INFO] ------------------------------------------------------------------------
 Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/validate.groovy

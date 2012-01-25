@@ -4,11 +4,10 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
-import org.neo4j.build.plugins.changes.Changelog;
-import org.neo4j.build.plugins.changes.VersionMatcher;
 
 
 public class TestChangelog {
@@ -29,6 +28,11 @@ public class TestChangelog {
         "------------------------\n"+
         "Initial release.\n\n";
 
+    private static final String EXPECTED_1_6_SECTION_WITH_EXCLUDES = 
+        "1.6 (2012-01-19)\n----------------\n" +
+        "o Fixes issues #173, #118, #138, #103\n" +
+        "o Fixes issues #173, #118, #138, #103\n\n";
+
     @Test
     public void testExtractSectionForVersion() throws Exception
     {
@@ -47,7 +51,24 @@ public class TestChangelog {
         
         // Extract all 1.6 entries, including milestones
         VersionMatcher versionMatcher = new VersionMatcher("1\\.6","1\\.6\\.M.*");
-        assertThat(StringUtils.join(changelog.extractSectionForVersion(versionMatcher),"\n"), is(EXPECTED_1_6_SECTION + EXPECTED_1_6_M01_SECTION));
+        assertThat(StringUtils.join(changelog.extractSectionForVersion(versionMatcher, LineEvaluator.ALL),"\n"), is(EXPECTED_1_6_SECTION + EXPECTED_1_6_M01_SECTION));
+        
+    }
+    
+    @Test
+    public void testExcludingLinesWithSpecificString() throws Exception
+    {
+        InputStream changesInput = this.getClass().getResourceAsStream("/changelogs/WITH_EXCLUDES.txt");
+        
+        Changelog changelog = new Changelog(changesInput);
+        VersionMatcher versionMatcher = new VersionMatcher("1\\.6");
+        
+        LineEvaluator lineEvaluator = new LineEvaluator();
+        lineEvaluator.excludeLinesContaining("[minor]");
+        
+        List<String> result = changelog.extractSectionForVersion(versionMatcher, lineEvaluator);
+        
+        assertThat(StringUtils.join(result,"\n"), is(EXPECTED_1_6_SECTION_WITH_EXCLUDES));
         
     }
 
