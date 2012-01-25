@@ -46,14 +46,18 @@ public class CombiningChangelogWriter {
             
             writeTitleTo(out);
             for (Pair<String, File> changelogMeta : changelogs)
-            {
-                Changelog changelog = new Changelog(changelogMeta.second);
-                List<String> lines = changelog.extractAllEntriesWithoutHeadlines(VersionMatcher.ANY, lineEvaluator);
-                
+            {   
                 out.write(changelogMeta.first + ":\n");
                 
-                for(String line : lines) {
-                    out.write(line + "\n");
+                if(changelogMeta.second.exists()) {
+                    Changelog changelog = new Changelog(changelogMeta.second);
+                    List<String> lines = changelog.extractAllEntriesWithoutHeadlines(VersionMatcher.ANY, lineEvaluator);
+                    
+                    for(String line : lines) {
+                        out.write(line + "\n");
+                    }
+                } else {
+                    out.write("No changes.\n");
                 }
             }
         } finally {
@@ -67,9 +71,10 @@ public class CombiningChangelogWriter {
     {
         @SuppressWarnings("deprecation")
         String dateStr = (date.getYear() + 1900) + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-        String headline = version + " (" + dateStr + ")\n";
+        String headline = version + " (" + dateStr + ")";
         
         out.write(headline);
+        out.write("\n");
         for(int i=0;i<headline.length();i++) {
             out.write("-");
         }

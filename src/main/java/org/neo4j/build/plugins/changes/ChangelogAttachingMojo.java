@@ -119,14 +119,22 @@ public class ChangelogAttachingMojo extends AbstractMojo {
      * @parameter
      */
     private List<String> excludeLinesContaining;
+    
+    /**
+     * @parameter default-value="false"
+     */
+    private boolean skip = false;
 
     public void execute() throws MojoExecutionException, MojoFailureException
     {
+        if(skip) {
+            return;
+        }
+        
         try
         {
             // Create if output doesn't exist.
             extractedChangelogOutputFile.getParentFile().mkdirs();
-            extractedChangelogOutputFile.createNewFile();
             
             if(combinedOutputFile.exists()) {
                 combinedOutputFile.delete();

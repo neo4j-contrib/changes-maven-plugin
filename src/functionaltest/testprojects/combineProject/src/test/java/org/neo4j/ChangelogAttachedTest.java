@@ -5,30 +5,12 @@ import static org.junit.Assert.assertThat;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class ChangelogAttachedTest  {
-    
-    private static final String EXPECTED_CHANGELOG_CONTENT = 
-            "1.0-SNAPSHOT (2012-1-25)\n" +
-            "-------------------------\n" +
-            "\n" +
-            "it.sandbox.combineProject:\n" +
-            "o Fixes issues #173, #118, #138, #103\n" +
-            "\n" +
-            "\n" +
-            "it.sandbox.firstProject:\n" +
-            "o Fixes issues #173, #118, #138, #103\n" +
-            // This line is in the firstProject changelog,
-            // but we are expecting it to be excluded here.
-            //"o Made some changes [minor]\n" + 
-            "\n" +
-            "\n" +
-            "it.sandbox.secondProject:\n" +
-            "o Fixes issues #173, #118, #138, #103\n\n\n";
     
     private File output = new File("target/CHANGES.txt");
 
@@ -41,7 +23,36 @@ public class ChangelogAttachedTest  {
     @Test
     public void outputFileShouldContainExpectedContent() throws Exception 
     {
-        assertContains(output, EXPECTED_CHANGELOG_CONTENT);
+        assertContains(output, expectedChangelogContent());
+    }
+    
+    private String expectedChangelogContent() {
+        Date date = new Date();
+        @SuppressWarnings("deprecation")
+        String dateStr = (date.getYear() + 1900) + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+        String headline = "1.0 (" + dateStr + ")";
+        
+        StringBuilder divide = new StringBuilder();
+        for(int i=0;i<headline.length();i++) {
+            divide.append("-");
+        }
+        
+        return  headline + "\n"+
+                divide.toString() + "\n"+
+                "\n" +
+                "it.sandbox.combineProject:\n" +
+                "o Fixes issues #173, #118, #138, #103\n" +
+                "\n" +
+                "\n" +
+                "it.sandbox.firstProject:\n" +
+                "o Fixes issues #173, #118, #138, #103\n" +
+                // This line is in the firstProject changelog,
+                // but we are expecting it to be excluded here.
+                //"o Made some changes [minor]\n" + 
+                "\n" +
+                "\n" +
+                "it.sandbox.secondProject:\n" +
+                "o Fixes issues #173, #118, #138, #103\n\n\n";
     }
 
     private static void assertExists(File file) throws Exception 

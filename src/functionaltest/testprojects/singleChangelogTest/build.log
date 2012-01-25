@@ -1,7 +1,7 @@
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:singleChangelogTest:jar:1.0-SNAPSHOT
+[INFO] Building Unnamed - it.sandbox:singleChangelogTest:jar:1.0
 [INFO]    task-segment: [clean, compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [clean:clean {execution: default-clean}]
@@ -39,14 +39,14 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2 seconds
-[INFO] Finished at: Wed Jan 25 13:53:46 CET 2012
-[INFO] Final Memory: 14M/213M
+[INFO] Total time: 1 second
+[INFO] Finished at: Wed Jan 25 16:49:41 CET 2012
+[INFO] Final Memory: 14M/214M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:singleChangelogTest:jar:1.0-SNAPSHOT
+[INFO] Building Unnamed - it.sandbox:singleChangelogTest:jar:1.0
 [INFO]    task-segment: [compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [changes:extract-changelog {execution: default}]
@@ -73,7 +73,7 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogDeployedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 
 Results :
 
@@ -83,7 +83,7 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Wed Jan 25 13:53:48 CET 2012
+[INFO] Finished at: Wed Jan 25 16:49:42 CET 2012
 [INFO] Final Memory: 9M/149M
 [INFO] ------------------------------------------------------------------------
 Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/singleChangelogTest/validate.groovy

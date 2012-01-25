@@ -69,15 +69,28 @@ public class ChangeLogExtractorMojo extends AbstractMojo {
      * @parameter
      */
     private List<String> excludeLinesContaining;
-    
-    public void execute() throws MojoExecutionException, MojoFailureException {
-        try {
 
-            Changelog changelog = new Changelog(changelogPath);
-            
-            List<String> extractedSections = changelog.extractSectionForVersion(createVersionMatcher(), createLineEvaluator());
-            
-            FileUtils.writeLines(extractedChangelogOutputFile, extractedSections);
+    /**
+     * @parameter default-value="false"
+     */
+    private boolean skip = false;
+
+    public void execute() throws MojoExecutionException, MojoFailureException
+    {
+        if(skip) {
+            return;
+        }
+        
+        try {
+            if(changelogPath.exists()) {
+                Changelog changelog = new Changelog(changelogPath);
+                
+                List<String> extractedSections = changelog.extractSectionForVersion(createVersionMatcher(), createLineEvaluator());
+                
+                FileUtils.writeLines(extractedChangelogOutputFile, extractedSections);
+            } else {
+                getLog().warn("No changelog found at: " + changelogPath.getAbsolutePath() + ". Ignoring.");
+            }
            
         } catch (RuntimeException exc) {
             throw exc;

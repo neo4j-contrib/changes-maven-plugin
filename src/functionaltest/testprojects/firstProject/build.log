@@ -1,7 +1,7 @@
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:firstProject:jar:1.0-SNAPSHOT
+[INFO] Building Unnamed - it.sandbox:firstProject:jar:1.0
 [INFO]    task-segment: [clean, compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [clean:clean {execution: default-clean}]
@@ -32,7 +32,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 
 Results :
 
@@ -41,14 +41,14 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2 seconds
-[INFO] Finished at: Wed Jan 25 13:53:55 CET 2012
-[INFO] Final Memory: 14M/214M
+[INFO] Total time: 1 second
+[INFO] Finished at: Wed Jan 25 16:49:56 CET 2012
+[INFO] Final Memory: 15M/213M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:firstProject:jar:1.0-SNAPSHOT
+[INFO] Building Unnamed - it.sandbox:firstProject:jar:1.0
 [INFO]    task-segment: [compile, install]
 [INFO] ------------------------------------------------------------------------
 [INFO] [changes:extract-changelog {execution: default}]
@@ -86,14 +86,14 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 [INFO] [jar:jar {execution: default-jar}]
 [INFO] Building jar: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/singleChangelogTest.jar
 [INFO] [install:install {execution: default-install}]
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/singleChangelogTest.jar to /home/jake/.m2/repository/it/sandbox/firstProject/1.0-SNAPSHOT/firstProject-1.0-SNAPSHOT.jar
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/firstProject/1.0-SNAPSHOT/firstProject-1.0-SNAPSHOT-changelog.txt
-[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/firstProject/1.0-SNAPSHOT/firstProject-1.0-SNAPSHOT-changelog.txt
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/singleChangelogTest.jar to /home/jake/.m2/repository/it/sandbox/firstProject/1.0/firstProject-1.0.jar
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/firstProject/1.0/firstProject-1.0-changelog.txt
+[INFO] Installing /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/target/classes/CHANGES.txt to /home/jake/.m2/repository/it/sandbox/firstProject/1.0/firstProject-1.0-changelog.txt
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2 seconds
-[INFO] Finished at: Wed Jan 25 13:53:57 CET 2012
+[INFO] Total time: 1 second
+[INFO] Finished at: Wed Jan 25 16:49:58 CET 2012
 [INFO] Final Memory: 14M/215M
 [INFO] ------------------------------------------------------------------------
 Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/firstProject/validate.groovy

@@ -55,6 +55,7 @@
 					<execution>
 						<goals>
 							<goal>extract-changelog</goal>
+                            <goal>attach-changelog</goal>
 						</goals>
 					</execution>
 				</executions>

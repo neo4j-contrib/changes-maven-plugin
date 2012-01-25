@@ -1,94 +1,90 @@
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:combineProject:jar:1.0
+[INFO] Building Unnamed - it.sandbox:skipProject:jar:1.0
 [INFO]    task-segment: [clean, compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [clean:clean {execution: default-clean}]
-[INFO] Deleting file set: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/target (included: [**], excluded: [])
+[INFO] Deleting file set: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/target (included: [**], excluded: [])
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/main/resources
-[INFO] [changes:attach-changelog {execution: default}]
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/main/resources
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/main/resources
-[INFO] [changes:attach-changelog {execution: default}]
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/main/resources
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [resources:testResources {execution: default-testResources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/test/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/test/resources
 [INFO] [compiler:testCompile {execution: default-testCompile}]
-[INFO] Compiling 1 source file to /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/target/test-classes
+[INFO] Compiling 1 source file to /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/target/test-classes
 [INFO] [surefire:test {execution: default-test}]
-[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/target/surefire-reports
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running org.neo4j.PluginSkippedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Wed Jan 25 16:50:01 CET 2012
-[INFO] Final Memory: 15M/213M
+[INFO] Finished at: Wed Jan 25 16:49:53 CET 2012
+[INFO] Final Memory: 14M/213M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Unnamed - it.sandbox:combineProject:jar:1.0
+[INFO] Building Unnamed - it.sandbox:skipProject:jar:1.0
 [INFO]    task-segment: [compile, test]
 [INFO] ------------------------------------------------------------------------
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/main/resources
-[INFO] [changes:attach-changelog {execution: default}]
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/main/resources
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [changes:extract-changelog {execution: default}]
 [INFO] [resources:resources {execution: default-resources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/main/resources
-[INFO] [changes:attach-changelog {execution: default}]
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/main/resources
 [INFO] [compiler:compile {execution: default-compile}]
 [INFO] No sources to compile
 [INFO] [resources:testResources {execution: default-testResources}]
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/src/test/resources
+[INFO] skip non existing resourceDirectory /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/src/test/resources
 [INFO] [compiler:testCompile {execution: default-testCompile}]
 [INFO] Nothing to compile - all classes are up to date
 [INFO] [surefire:test {execution: default-test}]
-[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/target/surefire-reports
+[INFO] Surefire report directory: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.neo4j.ChangelogAttachedTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.neo4j.PluginSkippedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Wed Jan 25 16:50:02 CET 2012
+[INFO] Finished at: Wed Jan 25 16:49:54 CET 2012
 [INFO] Final Memory: 9M/149M
 [INFO] ------------------------------------------------------------------------
-Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/validate.groovy
-Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/combineProject/validate.groovy
+Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/validate.groovy
+Finished post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/validate.groovy
