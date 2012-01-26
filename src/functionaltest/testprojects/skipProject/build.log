@@ -40,8 +40,8 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Wed Jan 25 16:49:53 CET 2012
-[INFO] Final Memory: 14M/213M
+[INFO] Finished at: Thu Jan 26 10:09:42 CET 2012
+[INFO] Final Memory: 14M/214M
 [INFO] ------------------------------------------------------------------------
 + Error stacktraces are turned on.
 [INFO] Scanning for projects...
@@ -83,7 +83,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] BUILD SUCCESSFUL
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 1 second
-[INFO] Finished at: Wed Jan 25 16:49:54 CET 2012
+[INFO] Finished at: Thu Jan 26 10:09:43 CET 2012
 [INFO] Final Memory: 9M/149M
 [INFO] ------------------------------------------------------------------------
 Running post-build script in: /home/jake/Workspaces/Neo4j/changes-maven-plugin/src/functionaltest/testprojects/skipProject/validate.groovy
